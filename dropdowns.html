@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Dropdowns</title>
+</head>
+<body id="dropdowns">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Inici</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="alert.html">Alertes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">Botons </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progressbar.html">Barra de progrés </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="spinners.html">Spinners </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="dropdowns.html" class="nav-link">Dropdowns </a>
+                </li>
+                <li class="nav-item">
+                    <a href="carousels.html" class="nav-link">Carousels</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inputs.html" class="nav-link">Inputs </a>
+                </li>
+                <li class="nav-item">
+                    <a href="modals.html" class="nav-link">Modals </a>
+                </li>
+                <li class="nav-item">
+                    <a href="collapse.html" class="nav-link">Collapse </a>
+                </li>
+                <li class="nav-item">
+                    <a href="tooltips.html" class="nav-link">Tooltips </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Dropdowns</h1>
+            <p>Els dropdowns son menus desplegables que porten a varies opcions</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="margin:100px;">
+            <div class="col d-flex justify-content-center">
+                <div class="btn-group-vertical">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btn1-drop1">
+                            Dropdown
+                        </button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-header">Aquest és el primer desplegable</div>
+                            <a href="#btn1-drop1" class="dropdown-item">Pot tenir encapçalaments</a>
+                            <a href="#btn1-drop1" class="dropdown-item">I diverses opcions al seu interior</a>
+                            <div class="dropdown-header">Aquest és el segon encapçalament</div>
+                            <div class="dropdown-divider"></div>
+                            <a href="#btn-change-color" class="dropdown-item" onclick="changeColor(1)" id="btn-change-color">I aquesta opció els canvia de color</a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btn2-drop1">
+                        Es poden fer grups de botons verticals
+                    </button>
+                    <button type="button" class="btn btn-primary" id="btn3-drop1">
+                        Amb menús independents
+                    </button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btn4-drop1">
+                                Segon dropdown
+                        </button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-header">Aquest és el segon desplegable</div>
+                            <a class="dropdown-item">Té opcions diferents</a>
+                            <a class="dropdown-item">A les que té el desplegable superior</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item">Es poden utilitzar divisors</a>
+                            <a href="#code-dropdown" class="dropdown-item">Veure el codi</a>
+                        </div>
+                    </div>
+                    </div>                    
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="row" style="margin:100px;">
+            <div class="col d-flex justify-content-center">
+                <div class="dropdown dropright">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btn1-drop2">
+                        Dropright
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-header">El desplegable s'obre cap a la dreta</div>
+                        <div class="dropdown-divider"></div>
+                        <span class="dropdown-item-text">Es pot escriure text com a opció</span>
+                        <a href="#code-dropright" class="dropdown-item">Veure el codi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="btn-group">
+                    <div class="btn-group dropleft" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" id="btn1-drop3">
+                            <span class="sr-only"></span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-header">Aquest desplegable s'obre amb un botó diferent</div>
+                            <div class="dropdown-header">Orientat cap a l'esquerra</div>
+                            <div class="dropdown-divider"></div>
+                            <a href="#btn1-drop3" class="dropdown-item">Poden haver elements normals</a>
+                            <a href="#btn1-drop3" class="dropdown-item active">Elements actius</a>
+                            <a href="#btn1-drop3" class="dropdown-item disabled">I elements deshabilitats</a>
+                            <a href="#code-dropleft" class="dropdown-item">Veure el codi</a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="btn2-drop3">
+                        Split Dropleft
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin:100px;">
+            <div class="col d-flex justify-content-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary" id="btn1-drop4">Dropup amb</button>
+                    <button type="button" class="btn btn-primary" id="btn2-drop4">Botons agrupats</button>
+                    <div class="btn-group dropup" role="group">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" id="btn3-drop4">Horitzontalment</button>
+                        <div class="dropdown-menu">
+                            <div class="dropdown-header">Amb el desplegable en la part superior</div>
+                            <div class="dropdown-divider"></div>
+                            <span class="dropdown-item-text">Pot tenir les mateixes opcions que els anteriors</span>
+                            <a href="#code-dropup" class="dropdown-item">Veure el codi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <pre><code id="code-dropdown">
+                    <h4 style="text-decoration: underline;">Dropdown - Botons agrupats verticalment</h4>
+<strong>&lt;div class="btn-group-vertical">
+&lt;div class="btn-group">
+    &lt;button type="button" class="<code id="code-btn1-drop1"></code>" data-toggle="dropdown" id="btn1-drop1"></strong>
+            Dropdown
+    <strong>&lt;/button>
+    &lt;div class="dropdown-menu">
+        &lt;div class="dropdown-header"></strong>Aquest és el primer desplegable<strong>&lt;/div>
+        &lt;a href="#btn1-drop1" class="dropdown-item"></strong>Pot tenir encapçalaments<strong>&lt;/a>
+        &lt;a href="#btn1-drop1" class="dropdown-item"></strong>I diverses opcions al seu interior<strong>&lt;/a>
+        &lt;div class="dropdown-header"></strong>Aquest és el segon encapçalament<strong>&lt;/div>
+        &lt;div class="dropdown-divider">&lt;/div>
+        &lt;a href="#btn1-drop1" class="dropdown-item" onclick="changeColor(1)"></strong>I aquesta opció els canvia de color<strong>&lt;/a>
+    &lt;/div>
+    &lt;/div>
+    &lt;button type="button" class="<code id="code-btn2-drop1"></code>" id="btn2-drop1"></strong>
+        Es poden fer grups de botons verticals
+    <strong>&lt;/button>
+    &lt;button type="button" class="<code id="code-btn3-drop1"></code>" id="btn3-drop1"></strong>
+        Amb menús independents
+    <strong>&lt;/button>
+    &lt;div class="btn-group">
+        &lt;button type="button" class="<code id="code-btn4-drop1"></code>" data-toggle="dropdown" id="btn4-drop1"></strong>
+                Segon dropdown
+        <strong>&lt;/button>
+        &lt;div class="dropdown-menu">
+            &lt;div class="dropdown-header"></strong>Aquest és el segon desplegable<strong>&lt;/div>
+            &lt;a class="dropdown-item"></strong>Té opcions diferents<strong>&lt;/a>
+            &lt;a class="dropdown-item"></strong>A les que té el desplegable superior<strong>&lt;/a>
+            &lt;div class="dropdown-divider">&lt;/div>
+            &lt;a class="dropdown-item"></strong>Es poden utilitzar divisors<strong>&lt;/a>
+            &lt;a href="#code-dropdown" class="dropdown-item"></strong>Veure el codi<strong>&lt;/a>
+        &lt;/div>
+    &lt;/div>
+&lt;/div></strong>
+                    </code></pre>
+            </div>
+            <div class="col">
+                <pre><code id="code-dropright">
+                    <h4 style="text-decoration: underline;">Dropright</h4>
+<strong>&lt;div class="dropdown dropright">
+    &lt;button type="button" class="<code id="code-btn1-drop2"></code>" data-toggle="dropdown" id="btn1-drop2"></strong>
+        Dropright
+    <strong>&lt;/button>
+    &lt;div class="dropdown-menu">
+        &lt;div class="dropdown-header"></strong>El desplegable s'obre cap a la dreta<strong>&lt;/div>
+        &lt;div class="dropdown-divider">&lt;/div>
+        &lt;span class="dropdown-item-text"></strong>Es pot escriure text com a opció<strong>&lt;/span>
+        &lt;a href="#code-dropdown" class="dropdown-item"></strong>Veure el codi<strong>&lt;/a>
+    &lt;/div>
+&lt;/div></strong>
+                </code></pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <pre><code id="code-dropleft">
+                    <h4 style="text-decoration: underline;">Split Dropleft</h4>
+<strong>&lt;div class="btn-group">
+    &lt;div class="btn-group dropleft" role="group">
+        &lt;button type="button" class="<code id="code-btn1-drop3"></code>" data-toggle="dropdown" id="btn1-drop3">
+            &lt;span class="sr-only">&lt;/span>
+        &lt;/button>
+        &lt;div class="dropdown-menu">
+            &lt;div class="dropdown-header"></strong>Aquest desplegable s'obre amb un botó diferent<strong>&lt;/div>
+            &lt;div class="dropdown-header"></strong>Orientat cap a l'esquerra<strong>&lt;/div>
+            &lt;div class="dropdown-divider">&lt;/div>
+            &lt;a href="#btn1-drop3" class="dropdown-item"></strong>Poden haver elements normals<strong>&lt;/a>
+            &lt;a href="#btn1-drop3" class="dropdown-item active"></strong>Elements actius<strong>&lt;/a>
+            &lt;a href="#btn1-drop3" class="dropdown-item disabled"></strong>I elements deshabilitats<strong>&lt;/a>
+            &lt;a href="#code-dropright" class="dropdown-item"></strong>Veure el codi<strong>&lt;/a>
+        &lt;/div>
+    &lt;/div>
+    &lt;button type="button" class="<code id="code-btn2-drop3"></code>" id="btn2-drop3"></strong>
+        Split Dropleft
+    <strong>&lt;/button>
+&lt;/div></strong>
+                </code></pre>
+            </div>
+            <div class="col">
+                <pre><code id="code-dropup">
+                    <h4 style="text-decoration: underline;">Dropup - Botons agrupats horitzontalment</h4>
+<strong>&lt;div class="btn-group">
+    &lt;button type="button" class="<code id="code-btn1-drop4"></code>" id="btn1-drop4"></strong>Dropup amb<strong>&lt;/button>
+    &lt;button type="button" class="<code id="code-btn2-drop4"></code>" id="btn2-drop4"></strong>Botons agrupats<strong>&lt;/button>
+    &lt;div class="btn-group dropup" role="group">
+        &lt;button type="button" class="<code id="code-btn3-drop4"></code>" data-toggle="dropdown" id="btn3-drop4"></strong>Horitzontalment<strong>&lt;/button>
+        &lt;div class="dropdown-menu">
+            &lt;div class="dropdown-header"></strong>Amb el desplegable en la part superior<strong>&lt;/div>
+            &lt;div class="dropdown-divider">&lt;/div>
+            &lt;span class="dropdown-item-text"></strong>Pot tenir les mateixes opcions que els anteriors<strong>&lt;/span>
+            &lt;a href="#code-dropleft" class="dropdown-item"></strong>Veure el codi<strong>&lt;/a>
+        &lt;/div>
+    &lt;/div>
+&lt;/div></strong>
+                </code></pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        const colors = ["primary", "secondary", "success", "info", "warning", "danger", "dark", "light"];
+
+        let color_count;
+
+        window.onload = function() {
+            color_count = 0;
+            setColor(color_count);
+        }
+
+        function changeColor(steps) {
+            color_count += steps;
+            if(color_count >= colors.length) color_count = 0;
+            setColor(color_count)
+        }
+
+        function setColor(color) {
+            let btn_simple = "btn btn-" + colors[color];
+            let btn_normal = "btn btn-" + colors[color] + " dropdown-toggle";
+            let btn_complex = "btn btn-" + colors[color] + " dropdown-toggle dropdown-toggle-split";
+
+            document.getElementById("btn1-drop1").className = btn_normal;
+            document.getElementById("btn2-drop1").className = btn_simple;
+            document.getElementById("btn3-drop1").className = btn_simple;
+            document.getElementById("btn4-drop1").className = btn_normal;
+            document.getElementById("btn1-drop2").className = btn_normal;
+            document.getElementById("btn1-drop3").className = btn_complex;
+            document.getElementById("btn2-drop3").className = btn_simple;
+            document.getElementById("btn1-drop4").className = btn_simple;
+            document.getElementById("btn2-drop4").className = btn_simple;
+            document.getElementById("btn3-drop4").className = btn_normal;
+
+            document.getElementById("code-btn1-drop1").innerHTML = btn_normal;
+            document.getElementById("code-btn2-drop1").innerHTML = btn_simple;
+            document.getElementById("code-btn3-drop1").innerHTML = btn_simple;
+            document.getElementById("code-btn4-drop1").innerHTML = btn_normal;
+            document.getElementById("code-btn1-drop2").innerHTML = btn_normal;
+            document.getElementById("code-btn1-drop3").innerHTML = btn_complex;
+            document.getElementById("code-btn2-drop3").innerHTML = btn_simple;
+            document.getElementById("code-btn1-drop4").innerHTML = btn_simple;
+            document.getElementById("code-btn2-drop4").innerHTML = btn_simple;
+            document.getElementById("code-btn3-drop4").innerHTML = btn_normal;
+        }
+
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Modals</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Inici</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="alert.html">Alertes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">Botons </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progressbar.html">Barra de progrés </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="spinners.html">Spinners </a>
+                </li>
+                <li class="nav-item">
+                    <a href="dropdowns.html" class="nav-link">Dropdowns </a>
+                </li>
+                <li class="nav-item">
+                    <a href="carousels.html" class="nav-link">Carousels</a></li>
+                <li class="nav-item">
+                    <a href="inputs.html" class="nav-link">Inputs </a>
+                </li>
+                <li class="nav-item active">
+                    <a href="modals.html" class="nav-link">Modals </a>
+                </li>
+                <li class="nav-item">
+                    <a href="collapse.html" class="nav-link">Collapse </a>
+                </li>
+                <li class="nav-item">
+                    <a href="tooltips.html" class="nav-link">Tooltips </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Modals</h1>
+            <p>Els modals son pestanyes emergents que es superposen a la part superior de la pagina</p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <!-- Botó que obre el modal -->
+        <div class="row" style="margin: 50px;">
+            <div class="col d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" id="btn-show-main-modal" data-toggle="modal" data-target="#main-modal">
+                    Obrir el modal
+                </button>
+            </div>
+        </div>
+
+        <!-- Input -->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="usr">Encapçalament:</label>
+                    <input type="text" class="form-control" id="usr">
+
+                    <label for="comment">Cos:</label>
+                    <textarea class="form-control" rows="5" id="input-cos"></textarea>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <!-- El modal -->
+        <div class="modal" id="main-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Encapçalament -->
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="main-modal-header">Encapçalament</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Cos -->
+                    <div class="modal-body" id="main-modal-body">
+                        Text de exemple en un modal.
+                    </div>
+
+                    <!-- Peu -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tancar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <pre><code id="code-content">
+                <strong>&lt;div class="container-fluid"></strong>
+
+                    <strong style="font-style: italic; color: grey;">&lt;!-- Botó que obre el modal --></strong>
+                    <strong>&lt;div class="row" style="margin: 50px;">
+                        &lt;div class="col d-flex justify-content-center">
+                            &lt;button type="button" class="btn btn-primary" id="btn-show-main-modal" data-toggle="modal" data-target="#main-modal">
+                                Obrir el modal
+                            &lt;/button>
+                        &lt;/div>
+                    &lt;/div></strong>
+                
+                    <strong style="font-style: italic; color: grey;">&lt;!-- Input --></strong>
+                    <strong>&lt;div class="row">
+                        &lt;div class="col">&lt;/div>
+                            &lt;div class="col">
+                                &lt;div class="form-group">
+                                    &lt;label for="usr">Encapçalament:&lt;/label>
+                                    &lt;input type="text" class="form-control" id="usr">
+                
+                                    &lt;label for="comment">Cos:&lt;/label>
+                                    &lt;textarea class="form-control" rows="5" id="input-cos">&lt;/textarea>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;div class="col">&lt;/div>
+                    &lt;/div></strong>
+                        
+                    <strong style="font-style: italic; color: grey;">&lt;!-- El modal --></strong>
+                    <strong>&lt;div class="modal" id="main-modal">
+                        &lt;div class="modal-dialog">
+                            &lt;div class="modal-content"></strong>
+                
+                                <strong style="font-style: italic; color: grey;">&lt;!-- Encapçalament --></strong>
+                                <strong>&lt;div class="modal-header">
+                                    &lt;h4 class="modal-title" id="main-modal-header"><code style="font-weight: normal; text-decoration: underline;" id="code-content-header">Encapçalament</code>&lt;/h4>
+                                        &lt;button type="button" class="close" data-dismiss="modal">&times;&lt;/button>
+                                &lt;/div></strong>
+                
+                                <strong style="font-style: italic; color: grey;">&lt;!-- Cos --></strong>
+                                <strong>&lt;div class="modal-body" id="main-modal-body">
+                                    <code style="font-weight: normal; text-decoration: underline;" id="code-content-body">Text de exemple en un modal.</code>
+                                &lt;/div></strong>
+                
+                                <strong style="font-style: italic; color: grey;">&lt;!-- Peu --></strong>
+                                <strong>&lt;div class="modal-footer">
+                                    &lt;button type="button" class="btn btn-danger" data-dismiss="modal" id="btn-main-modal-close">Tancar&lt;/button>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div></strong>
+
+        </code></pre>        
+    </div>
+
+    <script>
+        // Quan es prem el botó per obrir el modal, comprova per cada un dels camps, si esta buit, en cas de no estar-ho,
+        // fica el valor.
+        $("#btn-show-main-modal").click(function(){
+            let val = $("#usr").val();
+            if(val == "") val = "Encapçalament"; 
+            $("#main-modal-header").html(val);
+            $("#code-content-header").html(val);
+
+            val = $("#input-cos").val();
+            if(val == "") val = "Text de exemple en un modal."; 
+            $("#main-modal-body").html(val);
+            $("#code-content-body").html(val);
+        });
+    </script>
+
+</body>
+</html>

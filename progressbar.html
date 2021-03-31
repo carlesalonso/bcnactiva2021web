@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Barra de Progrés</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Inici</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="alert.html">Alertes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="buttons.html">Botons </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="progressbar.html">Barra de progrés </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="spinners.html">Spinners </a>
+                </li>
+                <li class="nav-item">
+                    <a href="dropdowns.html" class="nav-link">Dropdowns </a>
+                </li>
+                <li class="nav-item">
+                    <a href="carousels.html" class="nav-link">Carousels</a>
+                </li>
+                <li class="nav-item">
+                    <a href="inputs.html" class="nav-link">Inputs </a>
+                </li>
+                <li class="nav-item">
+                    <a href="modals.html" class="nav-link">Modals </a>
+                </li>
+                <li class="nav-item">
+                    <a href="collapse.html" class="nav-link">Collapse </a>
+                </li>
+                <li class="nav-item">
+                    <a href="tooltips.html" class="nav-link">Tooltips </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="jumbotron">
+            <h1>Barra de progrés</h1>
+            <p>Les barres de progrés serveixen per informar a l'usuari de la quantitat de progrés que porta en un process.</p>
+        </div>
+    </div>
+        
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Any - <strong>Primari</strong></div>
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar" id="bar-year"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Mes - <strong>Èxit</strong></div>
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar bg-success" id="bar-month"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Dia - <strong>Info</strong></div>
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar bg-info" id="bar-day"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Hora - <strong>Advertència</strong></div>
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" id="bar-hour"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Minut - <strong>Perill</strong></div>
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" id="bar-minute"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">Segon - <strong>Fosc</strong></div>
+                    <div class="card-body">
+                        <div class="progress">
+                            <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" id="bar-second"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <pre><code>
+                    <h4 style="text-decoration: underline;">Any</h4>
+<strong>&lt;div class="progress">
+    &lt;div class="progress-bar" id="bar-year">&lt;/div>
+&lt;/div></strong>
+                </code></pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <pre><code>
+                    <h4 style="text-decoration: underline;">Mes</h4>
+<strong>&lt;div class="progress">
+    &lt;div class="progress-bar bg-success" id="bar-month">&lt;/div>
+&lt;/div></strong>
+                </code></pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <pre><code>
+                    <h4 style="text-decoration: underline;">Dia</h4>
+<strong>&lt;div class="progress">
+    &lt;div class="progress-bar bg-info" id="bar-day">&lt;/div>
+&lt;/div></strong>
+                </code></pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <pre><code>
+                    <h4 style="text-decoration: underline;">Hora</h4>
+<strong>&lt;div class="progress">
+    &lt;div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" id="bar-hour">&lt;/div>
+&lt;/div></strong>
+                </code></pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <pre><code>
+                    <h4 style="text-decoration: underline;">Minut</h4>
+<strong>&lt;div class="progress">
+    &lt;div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" id="bar-minute">&lt;/div>
+&lt;/div></strong>
+                </code></pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <pre><code>
+                    <h4 style="text-decoration: underline;">Segon</h4>
+<strong>&lt;div class="progress">
+    &lt;div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" id="bar-second">&lt;/div>
+&lt;/div></strong>
+                </code></pre>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <pre><code>
+                    <h4 style="text-decoration: underline;">JavaScript</h4>
+<strong>function updateBars() </strong>{
+    const now = new Date();
+
+    updateYear(now);
+    updateDay(now);
+    updateMonth(now);
+    updateHour(now);
+    updateMinute(now);
+    updateSecond(now);
+
+    window.requestAnimationFrame(updateBars);
+}
+
+<strong>function updateYear(now)</strong> {
+    let start = new Date(now.getFullYear(), 0, 0);
+    let diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
+    let oneDay = 1000 * 60 * 60 * 24;
+    let day = Math.floor(diff / oneDay);
+
+    document.getElementById("bar-year").style.width = (day*100/365) + "%";
+    document.getElementById("bar-year").innerHTML = Math.floor (day*100/365) + "%";
+}
+
+<strong>function updateMonth(now)</strong> {
+    document.getElementById("bar-month").style.width = (now.getDate()*100/31) + "%";
+    document.getElementById("bar-month").innerHTML= Math.floor (now.getDate()*100/31) + "%";
+}
+
+<strong>function updateDay(now)</strong> {
+    document.getElementById("bar-day").style.width = (now.getHours()*100/24) + "%";
+    document.getElementById("bar-day").innerHTML= Math.floor(now.getHours()*100/24) + "%";
+}
+
+<strong>function updateHour(now)</strong> {
+    document.getElementById("bar-hour").style.width = (now.getMinutes()*100/60) + "%";
+    document.getElementById("bar-hour").innerHTML = Math.floor (now.getMinutes()*100/60) + "%";
+}
+
+<strong>function updateMinute(now)</strong> {
+    document.getElementById("bar-minute").style.width = (now.getSeconds()*100/60) + "%";
+    document.getElementById("bar-minute").innerHTML = Math.floor (now.getSeconds()*100/60) + "%";
+}
+
+<strong>function updateSecond(now)</strong> {
+    let ms = now.getMilliseconds();
+    if(ms % 10 == 0) {
+        document.getElementById("bar-second").style.width = Math.floor((ms*100/1000)) + "%";
+        document.getElementById("bar-second").innerHTML = Math.floor((ms*100/1000)) + "%";
+    }
+}
+
+<strong>window.onload = function()</strong> {
+    window.requestAnimationFrame(updateBars);
+}
+                </code></pre>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateBars() {
+            const now = new Date();
+
+            updateYear(now);
+            updateDay(now);
+            updateMonth(now);
+            updateHour(now);
+            updateMinute(now);
+            updateSecond(now);
+
+            window.requestAnimationFrame(updateBars);
+        }
+
+        function updateYear(now) {
+            let start = new Date(now.getFullYear(), 0, 0);
+            let diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
+            let oneDay = 1000 * 60 * 60 * 24;
+            let day = Math.floor(diff / oneDay);
+
+            document.getElementById("bar-year").style.width = (day*100/365) + "%";
+            document.getElementById("bar-year").innerHTML = Math.floor (day*100/365) + "%";
+        }
+
+        function updateMonth(now) {
+            document.getElementById("bar-month").style.width = (now.getDate()*100/31) + "%";
+            document.getElementById("bar-month").innerHTML= Math.floor (now.getDate()*100/31) + "%";
+        }
+
+        function updateDay(now) {
+            document.getElementById("bar-day").style.width = (now.getHours()*100/24) + "%";
+            document.getElementById("bar-day").innerHTML= Math.floor(now.getHours()*100/24) + "%";
+        }
+
+        function updateHour(now) {
+            document.getElementById("bar-hour").style.width = (now.getMinutes()*100/60) + "%";
+            document.getElementById("bar-hour").innerHTML = Math.floor (now.getMinutes()*100/60) + "%";
+        }
+
+        function updateMinute(now) {
+            document.getElementById("bar-minute").style.width = (now.getSeconds()*100/60) + "%";
+            document.getElementById("bar-minute").innerHTML = Math.floor (now.getSeconds()*100/60) + "%";
+        }
+
+        function updateSecond(now) {
+            let ms = now.getMilliseconds();
+            if(ms % 10 == 0) {
+                document.getElementById("bar-second").style.width = Math.floor((ms*100/1000)) + "%";
+                document.getElementById("bar-second").innerHTML = Math.floor((ms*100/1000)) + "%";
+            }
+        }
+
+        window.onload = function() {
+            window.requestAnimationFrame(updateBars);
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
